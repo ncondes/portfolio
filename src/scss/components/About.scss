@@ -1,0 +1,34 @@
+@use '../utilities/variables' as *;
+
+.about {
+
+    h2 {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &__img {
+        background-image: linear-gradient( rgba($color: $blue-color, $alpha: 0.3) , rgba($color: $white, $alpha: 0.3)), url('../../assets/gifs/code.gif');
+    }
+}
+
+
+
+.about__grid {
+
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(10em,  ));
+    // gap: 3rem;
+
+
+    // .card {
+    //     background: red;
+    //     width: 200px;
+    //     height: 250px;
+
+    // }
+
+}

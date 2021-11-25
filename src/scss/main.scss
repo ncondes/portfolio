@@ -1,0 +1,6 @@
+@use './utilities/reset';
+@use './utilities/variables' as *;
+@use './components/Navbar.scss';
+@use './components/Hero.scss';
+@use './components/About.scss';
+@use './components/SectionTitle.scss';

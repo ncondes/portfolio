@@ -1,0 +1,18 @@
+@use '../utilities/variables' as *;
+
+.hero {
+
+    background: linear-gradient( rgba($color: $white, $alpha: 0.8), rgba($color: $white, $alpha: 0.8) ), url('../../../src/assets/images/hero.jpg');
+
+    h1, h2 {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .animate__animated.animate__fadeIn {
+        --animate-duration: 3s;
+        --animate-delay: 1s;
+      }
+
+
+}
+

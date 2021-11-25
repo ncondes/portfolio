@@ -1,0 +1,32 @@
+@use '../utilities/variables' as *;
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+
+    &::before {
+        background-color: $bottom-line-secondary;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        display: block;
+        height: 0.0625rem;
+        margin: 0 auto;
+        position: absolute;
+        width: 7.5rem;
+    }
+
+    &::after {
+        background-color: $bottom-line-primary;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        display: block;
+        height: 0.1875rem;
+        margin: 0 auto;
+        position: absolute;
+        width: 2.5rem;
+    }
+
+}
