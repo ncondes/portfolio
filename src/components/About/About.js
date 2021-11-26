@@ -10,7 +10,7 @@ import { aboutSkillsData } from '../../data/aboutSkillsData';
 export const About = () => {
     return (
         <section className='about pt-14 animate__animated animate__fadeInUp'>
-            <div className='container mx-auto px-5 lg:px-40'>
+            <div className='container mx-auto px-5 sm:px-10 md:px-20 lg:px-40'>
                 <SectionTitle
                     title='ABOUT'
                 />
@@ -49,10 +49,11 @@ export const About = () => {
                 >
                     My skills
                 </h2>
-                <div className='about__grid grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
+                <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
                     {
                         aboutSkillsData.map( skill => (
                             <AboutSkill
+                            key={ skill.name }
                                 { ...skill }
                             />
                         ))

@@ -6,10 +6,10 @@ export const DownloadCV = () => {
             href={ pdf }
             target='_blank'
             rel='noreferrer'
-            className='flex mx-auto mt-10 w-52 py-3 px-9 bg-nav-item-color rounded-md'
+            className='about__cv text-md flex mx-auto mt-10 w-56 py-3 px-9 bg-nav-item-color rounded-md transition hover:bg-blue-color text-secondary-font-color hover:text-nav-item-color'
         >
             <span
-                className='mr-3 text-secondary-font-color'
+                className='mr-3'
             >
                 Download CV
             </span>

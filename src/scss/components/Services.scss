@@ -1,0 +1,68 @@
+@use '../utilities/variables' as *;
+
+.services {
+
+    h3 {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &__service {
+
+        .svg-bg path, .svg-i path, .svg-i circle {
+            transition: fill 300ms ease-in-out;
+        }
+        
+        &:hover {
+
+            .blue-500 {
+                path {
+                    fill: $blue-500;
+                }
+            }
+
+            .yellow-600 {
+                path {
+                    fill: $yellow-600;
+                }
+            }
+            
+            .pink-500 {
+                path {
+                    fill: $pink-500;
+                }
+            }
+            
+            .yellow-300 {
+                path {
+                    fill: $yellow-300;
+                }
+            }
+
+            .red-500 {
+                path {
+                    fill: $red-500;
+                }
+            }
+
+            .green-400 {
+                path {
+                    fill: $green-400;
+                }
+            }
+            
+            .svg-i {
+                path {
+                    fill: $white;
+                }
+                circle {
+                    fill: $white,
+                }
+            }
+        }
+    }
+}
+

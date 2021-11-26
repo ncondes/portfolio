@@ -13,22 +13,20 @@
     &__img {
         background-image: linear-gradient( rgba($color: $blue-color, $alpha: 0.3) , rgba($color: $white, $alpha: 0.3)), url('../../assets/gifs/code.gif');
     }
+
+    &__cv {
+
+        font-family: 'Raleway', sans-serif;
+
+        svg path {
+            transition: fill 150ms ease-in-out;
+        }
+
+        &:hover {
+            svg path {
+                fill: $nav-item-color;
+            }    
+        } 
+    }
 }
 
-
-
-.about__grid {
-
-    // display: grid;
-    // grid-template-columns: repeat(auto-fill, minmax(10em,  ));
-    // gap: 3rem;
-
-
-    // .card {
-    //     background: red;
-    //     width: 200px;
-    //     height: 250px;
-
-    // }
-
-}

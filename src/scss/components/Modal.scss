@@ -1,0 +1,36 @@
+@use '../utilities/variables' as *;
+
+.modal {
+
+    h3 {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    span, p {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &__grid {
+        grid-template-columns: 70% 30%;
+    }
+
+    &__link {
+
+        svg path {
+            transition: fill 200ms ease-in-out;
+        }
+
+        &:hover {
+
+            span {
+                color: $blue-color;
+            }
+
+            svg path {
+                fill: $blue-color;
+            }
+        }
+    }
+
+}
+

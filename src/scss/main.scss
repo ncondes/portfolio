@@ -1,6 +1,9 @@
 @use './utilities/reset';
 @use './utilities/variables' as *;
 @use './components/Navbar.scss';
+@use './components/SectionTitle.scss';
 @use './components/Hero.scss';
 @use './components/About.scss';
-@use './components/SectionTitle.scss';
+@use './components/Portfolio.scss';
+@use './components/Modal.scss';
+@use './components/Services.scss';

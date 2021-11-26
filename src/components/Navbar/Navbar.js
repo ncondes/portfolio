@@ -6,7 +6,7 @@ export const Navbar = () => {
 
     return (
         <nav>
-            <div className='nav-menu hidden lg:flex flex-col justify-center fixed inset-y-0 z-10'>
+            <div className='nav-menu hidden lg:flex flex-col justify-center fixed inset-y-0'>
                 {
                     navbarData.map( ( icon, i ) => (
                         <NavItem

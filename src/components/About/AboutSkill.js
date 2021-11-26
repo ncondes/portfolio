@@ -1,4 +1,4 @@
-import htmlicon from '../../assets/icons/html.png';
+
 
 export const AboutSkill = ({ icon, name, text, color }) => {
     return (
