@@ -4,12 +4,13 @@ import AboutDescription from "./AboutDescription";
 import { DownloadCV } from "./DownloadCV";
 import { AboutSkill } from "./AboutSkill";
 import { aboutSkillsData } from '../../data/aboutSkillsData';
+import { forwardRef } from 'react';
 
 
-
-export const About = () => {
+export const About = forwardRef( ( props, about ) => {
     return (
         <section
+            ref={ about }
             id='about'
             className='about pt-14 animate__animated animate__fadeInUp'
         >
@@ -66,3 +67,4 @@ export const About = () => {
         </section>
     )
 }
+)

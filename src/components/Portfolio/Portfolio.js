@@ -1,10 +1,12 @@
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import { PortfolioProject } from './PortfolioProject';
 import { portfolioData } from '../../data/portolfioData';
+import { forwardRef } from 'react';
 
-export const Portfolio = () => {
+export const Portfolio = forwardRef( ( props, portfolio ) => {
     return (
             <section
+                ref={ portfolio }
                 id='portfolio'
                 className='portfolio pt-14 animate__animated animate__fadeInUp'
             >
@@ -37,3 +39,4 @@ export const Portfolio = () => {
             </section>
     )
 }
+)

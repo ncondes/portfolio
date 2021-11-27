@@ -1,12 +1,16 @@
 import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import { NavbarToggleContext } from '../../App';
 
 
 export const NavItem = ({ size, icon, name, url }) => {
+
+    const { activeSection } = useContext( NavbarToggleContext );
+
     return (
         <a
-            onClick={ () => { console.log( url ) }}
             href={ url }
-            className={ `navbar__item flex items-center rounded-full h-14 w-full px-4 my-1 text-nav-item-color cursor-pointer ${ name === 'Home' ? 'nav__item--active' : 'bg-nav-item-color' } ` }
+            className={ `navbar__item ${ activeSection === name && 'nav__item--active' } flex items-center rounded-full h-14 w-full px-4 my-1 text-nav-item-color cursor-pointer` }
             
         >
             <svg
@@ -19,7 +23,7 @@ export const NavItem = ({ size, icon, name, url }) => {
                     d={ icon }
                 />
             </svg>
-            <span className='hidden pr-2 pl-3'> { name } </span>
+            <span className='hidden px-3'> { name } </span>
         </a>
     )
 }

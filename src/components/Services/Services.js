@@ -1,12 +1,13 @@
 
-import React from 'react'
+import { forwardRef } from 'react'
 import { servicesData } from '../../data/servicesData'
 import { SectionTitle } from '../SectionTitle/SectionTitle'
 import { Service } from './Service';
 
-export const Services = () => {
+export const Services = forwardRef( ( props, services ) => {
     return (
         <section
+            ref={ services }
             id='services'
             className='services pt-14 animate__animated animate__fadeInUp'
         >
@@ -31,3 +32,4 @@ export const Services = () => {
         </section>
     )
 }
+)

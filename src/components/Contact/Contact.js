@@ -1,11 +1,11 @@
 import emailjs from 'emailjs-com'
-import { useRef } from 'react';
+import { forwardRef, useRef } from 'react';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import { useForm } from '../../hooks/useForm';
 import Swal from 'sweetalert2'
 
 
-export const Contact = () => {
+export const Contact = forwardRef( ( props, contact ) => {
 
     const form = useRef();
 
@@ -43,6 +43,7 @@ export const Contact = () => {
 
     return (
         <section
+            ref={ contact }
             id='contact'
             className='contact pt-14 animate__animated animate__fadeInUp'
         >
@@ -113,3 +114,4 @@ export const Contact = () => {
         </section>
     )
 }
+)

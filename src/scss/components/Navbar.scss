@@ -2,8 +2,13 @@
 
 .navbar {
 
+    span {
+        font-family: 'Open Sans', sans-serif;
+    }
+
     &__item {
         
+        background-color: $nav-item-color;
         max-width: 3.5rem;
         transition: background-color 150ms ease-in-out;
         
@@ -33,7 +38,49 @@
     background-color: $blue-color;
     
     svg path {
-        
+
         fill: $nav-item-color
     }
+}
+
+.navbar-mobile {
+
+    transform: translateX( -20rem );
+    transition: all 400ms ease-in-out; 
+
+    &--open {
+        transform: translateX( 0 );
+    }
+
+    span {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &__item {
+
+        background-color: $nav-item-color;
+        color: $primary-font-color;
+
+        &:hover {
+
+            background-color: $blue-color;
+            color: $nav-item-color;
+
+            svg path {
+                
+                fill: $nav-item-color
+            }
+    }
+    }
+}
+
+.nav-mobile__item--active {
+
+    background-color: $blue-color;
+    color: $nav-item-color;
+
+    svg path {
+        fill: $nav-item-color;
+    }
+
 }

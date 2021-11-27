@@ -12,7 +12,7 @@ export const Modal = () => {
     const { handleModal } = useContext( ProjectContext )
 
     return ReactDOM.createPortal(
-        <div className='animate__animated animate__fadeIn modal flex items-center justify-center w-screen h-screen fixed inset-0 bg-secondary-font-color bg-opacity-90'>
+        <div className='animate__animated animate__fadeIn modal flex items-center justify-center w-screen h-screen fixed inset-0 bg-secondary-font-color bg-opacity-90 z-20'>
             <ModalClose
                 handleModal={ handleModal } 
             />
