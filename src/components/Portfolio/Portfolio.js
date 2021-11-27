@@ -4,7 +4,10 @@ import { portfolioData } from '../../data/portolfioData';
 
 export const Portfolio = () => {
     return (
-            <section className='portfolio pt-14 animate__animated animate__fadeInUp'>
+            <section
+                id='portfolio'
+                className='portfolio pt-14 animate__animated animate__fadeInUp'
+            >
                 <div className='container mx-auto px-5 sm:px-10 md:px-20 lg:px-40'>
                     <SectionTitle
                         title='PORTFOLIO'

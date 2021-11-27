@@ -5,6 +5,7 @@ import { HeroLink } from './HeroLink';
 export const Hero = () => {
     return (
         <section
+            id='home'
             className='hero relative h-screen w-full bg-left md:bg-left lg:bg-center bg-no-repeat bg-cover'
         >
             <div className='animate__animated animate__fadeIn container mx-auto px-5 lg:px-40 h-full flex flex-col items-center lg:items-start justify-center'>

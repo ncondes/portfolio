@@ -42,7 +42,10 @@ export const Contact = () => {
     }
 
     return (
-        <section className='contact pt-14 animate__animated animate__fadeInUp'>
+        <section
+            id='contact'
+            className='contact pt-14 animate__animated animate__fadeInUp'
+        >
             <div className='container mx-auto px-5 sm:px-10 md:px-20 lg:px-40'>
                 <SectionTitle
                     title='CONTACT'

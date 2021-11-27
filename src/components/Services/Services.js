@@ -6,7 +6,10 @@ import { Service } from './Service';
 
 export const Services = () => {
     return (
-        <section className='services pt-14 animate__animated animate__fadeInUp'>
+        <section
+            id='services'
+            className='services pt-14 animate__animated animate__fadeInUp'
+        >
             <div className='container mx-auto px-5 sm:px-10 md:px-20 lg:px-40'>    
                 <SectionTitle
                     title='SERVICES'

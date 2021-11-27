@@ -4,9 +4,9 @@ import { NavItem } from "./NavItem";
 
 export const Navbar = () => {
 
-    return (
+    return ( 
         <nav>
-            <div className='nav-menu hidden lg:flex flex-col justify-center fixed inset-y-0'>
+            <div className='navbar hidden lg:flex flex-col justify-center fixed inset-y-0 left-4 z-10'>
                 {
                     navbarData.map( ( icon, i ) => (
                         <NavItem
@@ -14,6 +14,7 @@ export const Navbar = () => {
                             icon={ icon.svg }
                             size={ 22 }
                             name={ icon.type }
+                            url={ icon.url }
                         />
                     ))
                 }

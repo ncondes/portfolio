@@ -9,7 +9,10 @@ import { aboutSkillsData } from '../../data/aboutSkillsData';
 
 export const About = () => {
     return (
-        <section className='about pt-14 animate__animated animate__fadeInUp'>
+        <section
+            id='about'
+            className='about pt-14 animate__animated animate__fadeInUp'
+        >
             <div className='container mx-auto px-5 sm:px-10 md:px-20 lg:px-40'>
                 <SectionTitle
                     title='ABOUT'

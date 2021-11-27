@@ -1,4 +1,4 @@
-// import { Navbar } from './components/Navbar/Navbar';
+import { Navbar } from './components/Navbar/Navbar';
 import { Hero } from './components/Hero/Hero';
 import { About } from './components/About/About';
 import { Portfolio } from './components/Portfolio/Portfolio';
@@ -12,7 +12,7 @@ import { Footer } from './components/Footer/Footer';
 export const App = () => {
     return (
         <>
-            {/* <Navbar /> */}
+            <Navbar />
             <Hero />
             <About />
             <Portfolio />

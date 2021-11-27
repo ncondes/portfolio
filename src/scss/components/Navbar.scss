@@ -1,19 +1,39 @@
 @use '../utilities/variables' as *;
 
-.nav-menu {
+.navbar {
 
-    a {
+    &__item {
+        
+        max-width: 3.5rem;
         transition: background-color 150ms ease-in-out;
+        
+        svg path {
+            
+            transition: fill 150ms ease-in-out;
+        }
+
         &:hover {
+
+            max-width: 100%;
             background-color: $blue-color;
+
+            svg path {
+                
+                fill: $nav-item-color
+            }
 
             span {
                 display: block;
             }
-            
-            svg path {
-                fill: $nav-item-color;
-            }
         }
+    }
+}
+
+.nav__item--active {
+    background-color: $blue-color;
+    
+    svg path {
+        
+        fill: $nav-item-color
     }
 }
