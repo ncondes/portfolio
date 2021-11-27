@@ -1,16 +1,16 @@
 module.exports = {
     purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        fontFamily: {
-            "open-sans": ['Open Sans', 'sans-serif'],
-            "poppins": ['Poppins', 'sans-serif'],
-            "raleway": ['Ralleway', 'sans-serif'],
+    darkMode: false,
+    style:{
+        postcss: {
+            plugins: [
+                require('tailwindcss'),
+                require('autoprefixer'),
+            ],
         },
+    },
+    theme: {
         extend: {
-            backgroundImage: {
-                "hero-pattern": "url('../src/assets/images/hero.jpg')",
-            },
             colors: {
                 "primary-font-color": "#45505B",
                 "secondary-font-color":"#272829",
@@ -20,11 +20,6 @@ module.exports = {
             },
         },
     },
-    variants: {
-        fill: [ 'hover', 'focus' ],
-        extend: {
-            ringWith: [ 'hover', 'focus'],
-        },
-    },
+    variants: {},
     plugins: [],
 }
