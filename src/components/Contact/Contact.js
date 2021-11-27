@@ -60,7 +60,7 @@ export const Contact = forwardRef( ( props, contact ) => {
                             ref={ form }
                             className='flex flex-col items-center'
                             onSubmit={ handleSubmit }
-                        >`
+                        >
                             <div className='w-full h-full grid grid-cols-1 md:grid-cols-2 gap-x-5'>
                                 <input
                                     className='shadow-sm focus:ring focus:ring-blue-color focus:ring-opacity-60'

@@ -23,7 +23,7 @@ export const NavItem = ({ size, icon, name, url }) => {
                     d={ icon }
                 />
             </svg>
-            <span className='hidden px-3'> { name } </span>
+            <span className='hidden text-sm pl-2'> { name } </span>
         </a>
     )
 }

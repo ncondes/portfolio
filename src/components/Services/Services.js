@@ -16,7 +16,7 @@ export const Services = forwardRef( ( props, services ) => {
                     title='SERVICES'
                 />
                 <p className='text-center text-secondary-font-color mb-5'>
-                    Services I offer
+                    These are some of the services that I can offer
                 </p>
                 <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5'>
                         {

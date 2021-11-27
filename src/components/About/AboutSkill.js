@@ -6,7 +6,7 @@ export const AboutSkill = ({ icon, name, text, color }) => {
             className='h-48 w-full flex flex-col justify-center items-center rounded-md border border-nav-item-color px-5 py-5'
         >
             <div
-                className={ `flex justify-center items-center w-14 h-14 bg-${ color } bg-opacity-30 rounded-2xl` }
+                className={ `flex justify-center items-center w-14 h-14 ${ color } bg-opacity-30 rounded-2xl` }
             >
                 <img
                     className='w-3/5'

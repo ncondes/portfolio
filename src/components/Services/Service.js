@@ -17,7 +17,7 @@ export const Service = ({ name, text, svg, color }) => {
                     />
                 </svg>
                 <svg
-                    className={ `fill-current text-${ color } absolute inset-0 mx-auto my-auto svg-i` }
+                    className={ `fill-current ${ color } absolute inset-0 mx-auto my-auto svg-i` }
                     width={ 32 }
                     height={ 32 }
                     viewBox='0 0 24 24'

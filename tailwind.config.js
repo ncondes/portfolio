@@ -1,14 +1,9 @@
 module.exports = {
-    purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+    purge: [
+        './src/**/*.{js,jsx,ts,tsx}',
+        './public/index.html',
+    ],
     darkMode: false,
-    style:{
-        postcss: {
-            plugins: [
-                require('tailwindcss'),
-                require('autoprefixer'),
-            ],
-        },
-    },
     theme: {
         extend: {
             colors: {
