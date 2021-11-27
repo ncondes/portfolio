@@ -7,7 +7,7 @@ export const HeroLink = ({ link, size, icon, name }) => {
             href={`${ link }`}
             target='_blank'
             rel='noreferrer'
-            className='mr-3 lg:mr-6'
+            className='hero__link'
         >
             <svg
                 className='fill-current text-primary-font-color transition hover:text-blue-color'

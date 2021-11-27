@@ -11,8 +11,20 @@
     .animate__animated.animate__fadeIn {
         --animate-duration: 3s;
         --animate-delay: 1s;
-      }
+    }
 
+    &__link {
+        &:not(:last-child) {
+            margin-right: 0.75rem;
+        }
+    }
+}
 
+@media (min-width: 1024px) {
+    .hero__link {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
 }
 

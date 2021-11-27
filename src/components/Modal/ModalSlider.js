@@ -13,7 +13,7 @@ export const ModalSlider = () => {
     const { title, images } = useContext( ProjectContext );
 
     return (
-        <div className='w-full h-2/5 shadow-lg sm:h-1/2 md:h-3/5 lg:h-full'>
+        <div className='w-full h-2/5 shadow-lg sm:h-1/2 md:h-3/5 lg:h-full overflow-hidden'>
             <Swiper
                 className='w-full h-full'
                 modules={[Autoplay, Navigation, Pagination]}

@@ -15,13 +15,16 @@ module.exports = {
                 "primary-font-color": "#45505B",
                 "secondary-font-color":"#272829",
                 "blue-color":"#459EAD",
-                "nav-item-color":"#F2F3F5"
+                "nav-item-color":"#F2F3F5",
+                "footer-color":"#F7F8F9"
             },
         },
     },
     variants: {
         fill: [ 'hover', 'focus' ],
-        extend: {},
+        extend: {
+            ringWith: [ 'hover', 'focus'],
+        },
     },
     plugins: [],
 }
