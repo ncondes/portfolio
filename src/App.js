@@ -22,11 +22,7 @@ export const App = () => {
         height: window.innerHeight,
         width: window.innerWidth,
     });
-<<<<<<< HEAD
     const [ y, setY ] = useState( window.scrollY );
-=======
-    const [ yPosition, setYPosition ] = useState( window.scrollY );
->>>>>>> useEffect, deploy test
     const [ activeSection, setActiveSection ] = useState( 'hero' );
 
     const about = createRef();
@@ -44,10 +40,6 @@ export const App = () => {
     }
 
     useEffect(() => {
-<<<<<<< HEAD
-=======
-
->>>>>>> useEffect, deploy test
         const handleResize = () => {
             setDimensions({
                 height: window.innerHeight,
@@ -61,7 +53,6 @@ export const App = () => {
             setNavbarIsOpen( false );
         }
         
-<<<<<<< HEAD
         const handleY = (e) => {
             setY( window.scrollY );
         }
@@ -77,50 +68,12 @@ export const App = () => {
         } else if ( (document.body.offsetHeight - dimensions.height) === y ) {
             setActiveSection('Contact');
         } else if ( y >= services.current.offsetTop && y < contact.current.offsetTop ) {
-=======
-    }, [ dimensions ]);
-
-    useEffect(() => {
-
-        const handleYPosition = (e) => {
-            setYPosition( window.scrollY );
-        }
-
-        window.addEventListener( 'scroll', handleYPosition );
-
-    }, [ yPosition ])
-
-    useEffect(() => {
-
-        const sectionPosition = {
-            about: about.current.offsetTop,
-            portfolio: portfolio.current.offsetTop,
-            services: services.current.offsetTop,
-            contact: contact.current.offsetTop,
-        }
-        const documentHeight = document.body.offsetHeight;
-
-        if ( yPosition < sectionPosition.about ) {
-            setActiveSection('Home');
-        } else if ( yPosition >= sectionPosition.about && yPosition < sectionPosition.portfolio ) {
-            setActiveSection('About');
-        } else if ( yPosition >= sectionPosition.portfolio && yPosition < sectionPosition.services ) {
-            setActiveSection('Portfolio');
-        } else if ( ( documentHeight - dimensions.height ) === yPosition ) {
-            setActiveSection('Contact');
-        } else if ( yPosition >= sectionPosition.services && yPosition < sectionPosition.contact ) {
->>>>>>> useEffect, deploy test
             setActiveSection('Services');
         } else {
             setActiveSection('Contact');
         }
 
-<<<<<<< HEAD
     }, [ dimensions, about, portfolio, services, contact, y]);
-=======
-    }, [ about, portfolio, services, contact, dimensions.height, yPosition ]);
-
->>>>>>> useEffect, deploy test
 
     return (
         <NavbarToggleContext.Provider value={{
