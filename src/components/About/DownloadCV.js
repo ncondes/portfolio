@@ -1,4 +1,4 @@
-import pdf from '../../assets/pdf/diploma-escuela-javascript.pdf'
+import pdf from '../../assets/pdf/CV - Nicolas Conde Salazar.pdf'
 
 export const DownloadCV = () => {
     return (
